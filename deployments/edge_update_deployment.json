@@ -1,0 +1,21 @@
+{
+    "assets": [
+        {
+            "asset_class": "adaptors",
+            "asset_id": "",
+            "deployment": "edge_update_deployment",
+            "member": "edge_update_deployment_deployment_edge_group",
+            "sync": true
+        },
+        {
+            "asset_class": "services",
+            "asset_id": "edge_getEdgeVersion",
+            "deployment": "edge_update_deployment",
+            "member": "edge_update_deployment_deployment_edge_group",
+            "sync": true
+        }
+    ],
+    "description": "",
+    "edges": [],
+    "name": "edge_update_deployment"
+}
