@@ -1,0 +1,32 @@
+{
+    "asset_types": [
+        "Adapters",
+        "Code Libraries",
+        "Code Services",
+        "Devices",
+        "Edges",
+        "Portals",
+        "Roles",
+        "Users"
+    ],
+    "author": {
+        "email": "jbouquet@clearblade.com"
+    },
+    "clouds": [],
+    "description": "User interface and assets that can be used to easily upgrade the ClearBlade Edge binary on IoT gateways executing ClearBlade Edge on a mipsle linux architecure.",
+    "domains": [],
+    "gateways": [],
+    "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
+    "keywords": [
+        "clearblade",
+        "iot",
+        "platform"
+    ],
+    "license": "MIT",
+    "name": "edge_update_mipsle",
+    "private": false,
+    "prog_lang": [],
+    "protocols": [],
+    "things": [],
+    "version": "1.0.0"
+}
