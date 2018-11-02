@@ -1,0 +1,32 @@
+{
+    "auth": true,
+    "deployments": [
+        {
+            "assets": [
+                {
+                    "asset_class": "adaptors",
+                    "asset_id": "",
+                    "deployment": "edge_update_deployment",
+                    "member": "edge_update_deployment_deployment_edge_group",
+                    "sync": true
+                },
+                {
+                    "asset_class": "services",
+                    "asset_id": "edge_getEdgeVersion",
+                    "deployment": "edge_update_deployment",
+                    "member": "edge_update_deployment_deployment_edge_group",
+                    "sync": true
+                }
+            ],
+            "description": "",
+            "edges": [],
+            "name": "edge_update_deployment"
+        }
+    ],
+    "description": "User interface and assets that can be used to easily upgrade the ClearBlade Edge binary on IoT gateways executing ClearBlade Edge on a mipsle linux architecure.",
+    "messaging_url": "platform.clearblade.com:1883",
+    "name": "edge_update_mipsle",
+    "platform_url": "https://bnsf.clearblade.com",
+    "system_key": "80b5e2bd0bd49ebfffb1bbf0f79701",
+    "system_secret": ""
+}
