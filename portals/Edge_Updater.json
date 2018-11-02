@@ -1,0 +1,791 @@
+{
+    "config": {
+        "cols": {
+            "lg": 12,
+            "md": 10,
+            "sm": 6,
+            "xs": 4,
+            "xxs": 2
+        },
+        "currentBreakpointForFlyoutWidgets": "lg",
+        "currentBreakpointForPanes": "lg",
+        "currentBreakpointsForWidgets": {
+            "317eea4e-a7b5-4919-9f38-7f8a04ea2334": "lg"
+        },
+        "datasources": {
+            "3ec723bf-4ccf-4cef-88f0-4b9f302e1184": {
+                "id": "3ec723bf-4ccf-4cef-88f0-4b9f302e1184",
+                "name": "edge_list",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "refresh_interval": 0
+                },
+                "type": "CB_EDGE_LIST"
+            },
+            "58dc427a-b207-42af-b5c3-1ed63c7a9d36": {
+                "id": "58dc427a-b207-42af-b5c3-1ed63c7a9d36",
+                "name": "edge_update_response_topic",
+                "settings": {
+                    "CALL_ON_LOAD": false,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "TOPIC_NAME": "edge/update/JimRpi3B1/response"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "5c255195-22c5-4d65-a914-1cd1d6cbe465": {
+                "id": "5c255195-22c5-4d65-a914-1cd1d6cbe465",
+                "name": "selected_edge",
+                "settings": {},
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "76c0b2c1-7ad0-4ba6-9b57-b231ee665ebb": {
+                "id": "76c0b2c1-7ad0-4ba6-9b57-b231ee665ebb",
+                "name": "portal_getPlatformVersion",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "code_name": "portal_getPlatformVersion",
+                    "payload": "{}",
+                    "refresh_interval": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "a5a42184-b7d5-42e5-a17a-0256577f6722": {
+                "id": "a5a42184-b7d5-42e5-a17a-0256577f6722",
+                "name": "edge_update_request_topic",
+                "settings": {
+                    "CALL_ON_LOAD": false,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "TOPIC_NAME": "edge/update/JimRpi3B1/request",
+                    "returnFullMessage": false
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "e2b861bd-c910-4d1a-88e2-acbc1dbc56b3": {
+                "id": "e2b861bd-c910-4d1a-88e2-acbc1dbc56b3",
+                "name": "edge_update_logs_topic",
+                "settings": {
+                    "CALL_ON_LOAD": false,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "TOPIC_NAME": "edge/update/JimRpi3B1/logs",
+                    "returnFullMessage": false
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "f09a93eb-351d-4294-84f7-df1f3816c864": {
+                "id": "f09a93eb-351d-4294-84f7-df1f3816c864",
+                "name": "edge_update_status",
+                "settings": {
+                    "datasources": [
+                        "e2b861bd-c910-4d1a-88e2-acbc1dbc56b3",
+                        "58dc427a-b207-42af-b5c3-1ed63c7a9d36"
+                    ]
+                },
+                "type": "DATASOURCE_AGGREGATOR"
+            }
+        },
+        "externalScripts": [],
+        "flyoutWidgetLayout": {
+            "lg": [],
+            "md": [],
+            "sm": [],
+            "xs": [],
+            "xxs": []
+        },
+        "headerWidgetLayout": {
+            "lg": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 42,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 69,
+                    "x": 157,
+                    "y": 0
+                }
+            ],
+            "md": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 39,
+                    "x": 154,
+                    "y": 0
+                }
+            ],
+            "sm": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 34,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 37,
+                    "x": 117,
+                    "y": 0
+                }
+            ],
+            "xs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 28,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 31,
+                    "x": 71,
+                    "y": 0
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 32,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 33,
+                    "x": 47,
+                    "y": 0
+                }
+            ]
+        },
+        "pages": {
+            "Home": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "Home",
+                "isChild": false,
+                "isParam": false,
+                "name": "Home",
+                "path": ""
+            }
+        },
+        "paneGridWidgetLayouts": {
+            "317eea4e-a7b5-4919-9f38-7f8a04ea2334": {
+                "lg": [
+                    {
+                        "h": 10,
+                        "i": "dd9c373b-562e-46d6-866b-29394610b054",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 23,
+                        "i": "49951ed2-1e96-4511-ba89-2b4893027fe2",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 3,
+                        "y": 0
+                    },
+                    {
+                        "h": 4,
+                        "i": "aef7bee3-6cd9-4be2-948c-1fef8448b46e",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 3,
+                        "y": 23
+                    },
+                    {
+                        "h": 29,
+                        "i": "c74074f2-4a4a-4003-a596-bca2de92b383",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 5,
+                        "x": 7,
+                        "y": 3
+                    },
+                    {
+                        "h": 3,
+                        "i": "ea918972-1b47-4ae2-9424-affd207acc54",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 8,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "paneLayouts": {
+            "Home": {
+                "lg": [
+                    {
+                        "h": 4,
+                        "i": "062f33d9-82a2-4186-9e1b-2351bc47b875",
+                        "moved": false,
+                        "static": false,
+                        "w": 12,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "panes": {
+            "062f33d9-82a2-4186-9e1b-2351bc47b875": {
+                "customPaneId": "",
+                "header": {
+                    "hide": false,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "062f33d9-82a2-4186-9e1b-2351bc47b875",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "317eea4e-a7b5-4919-9f38-7f8a04ea2334",
+                    "tabIds": [
+                        "317eea4e-a7b5-4919-9f38-7f8a04ea2334"
+                    ],
+                    "tabTitles": {
+                        "317eea4e-a7b5-4919-9f38-7f8a04ea2334": "Double Click"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            }
+        },
+        "savedPortalExists": true,
+        "theme": {
+            "graph": {
+                "four": "#E8E7C6",
+                "one": "#6E8592",
+                "three": "#DBA5A8",
+                "two": "#6E93A8"
+            },
+            "info": {
+                "display_name": "Standard",
+                "name": "STANDARD_THEME"
+            },
+            "items": {
+                "main": {
+                    "header": {
+                        "burgerBars": {
+                            "fontColor": "#f5f5f5",
+                            "visible": true
+                        },
+                        "dropdown": {
+                            "fontColor": "#f5f5f5",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "styles": {
+                            "backgroundColor": "#6e8592"
+                        }
+                    },
+                    "panes": {
+                        "flyout": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            }
+                        },
+                        "primary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592",
+                                "fontColor": "#000000",
+                                "fontFamily": "Helvetica"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#9db5c2",
+                                "fontColor": "#000000"
+                            }
+                        },
+                        "secondary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#9db5c2",
+                                "fontColor": "#000000",
+                                "fontFamily": "Helvetica"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#6e8592",
+                                "fontColor": "#000000"
+                            }
+                        }
+                    },
+                    "portal": {
+                        "styles": {
+                            "backgroundColor": "#ffffff"
+                        }
+                    },
+                    "widgets": {
+                        "BAR_CHART_WIDGET_COMPONENT": {
+                            "barColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ],
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000"
+                        },
+                        "BUTTON_WIDGET_COMPONENT": {
+                            "backgroundColor": "#f5f5f5",
+                            "backgroundHoverColor": "#c2c2c2",
+                            "borderColor": "#cccccc",
+                            "fontColor": "#000000"
+                        },
+                        "FILTERABLE_LIST_WIDGET_COMPONENT": {
+                            "activeItemBackgroundColor": "#6e8592",
+                            "activeItemFontColor": "#ffffff",
+                            "bulletColor": "#000000",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "FORM_WIDGET_COMPONENT": {
+                            "cardBackgroundColor": "#f5f5f5",
+                            "fontColor": "#000000",
+                            "sliderColor": "#6E8592",
+                            "titleColor": "#000000",
+                            "toggleColor": "#6E8592"
+                        },
+                        "GOOGLE_MAP_WIDGET_COMPONENT": {
+                            "mapTheme": ""
+                        },
+                        "GROUPING_LIST_WIDGET_COMPONENT": {
+                            "activeItemBackgroundColor": "#6e8592",
+                            "activeItemFontColor": "#ffffff",
+                            "bulletColor": "#000000",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "LINE_CHART_WIDGET_COMPONENT": {
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000",
+                            "lineColors": [
+                                {
+                                    "stroke": "#6E8592"
+                                },
+                                {
+                                    "stroke": "#6E93A8"
+                                },
+                                {
+                                    "stroke": "#DBA5A8"
+                                },
+                                {
+                                    "stroke": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "LIST_WIDGET_COMPONENT": {
+                            "activeItemBackgroundColor": "#6e8592",
+                            "activeItemFontColor": "#000000",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "PIE_CHART_WIDGET_COMPONENT": {
+                            "cells": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "RADIAL_GAUGE_WIDGET_COMPONENT": {
+                            "backgroundColor": "#c2c2c2",
+                            "progressColor": "#6e8592"
+                        },
+                        "SPEEDOMETER_WIDGET": {
+                            "arrowColor": "#000000",
+                            "sectionColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "TEXT_WIDGET_COMPONENT": {
+                            "fontColor": "#000000",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "TOGGLE_WIDGET": {
+                            "backgroundColor": "#c2c2c2",
+                            "fontColor": "#000000",
+                            "offColor": "#ffffff",
+                            "onColor": "#6e8592"
+                        }
+                    }
+                }
+            },
+            "palette": {
+                "darkPrimary": "#c2c2c2",
+                "darkSecondary": "#425864",
+                "defaultPrimary": "#f5f5f5",
+                "defaultSecondary": "#6e8592",
+                "lightPrimary": "#ffffff",
+                "lightSecondary": "#9db5c2",
+                "primaryText": "#000000",
+                "secondaryText": "#000000"
+            }
+        },
+        "upgradesPerformed": {
+            "flyoutTitleUpgrade": true,
+            "headerBrandUpgrade": true,
+            "headerTitleUpgrade": true,
+            "widgetResizeUpgrade": true
+        },
+        "widgets": {
+            "49951ed2-1e96-4511-ba89-2b4893027fe2": {
+                "externalScripts": [],
+                "id": "49951ed2-1e96-4511-ba89-2b4893027fe2",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "cardBackgroundColor": "#f5f5f5",
+                    "compactForm": true,
+                    "displayColumn": "name",
+                    "editColumns": {
+                        "description": {
+                            "dataType": "string",
+                            "display": true,
+                            "isReadOnly": true,
+                            "key": "0e74bafa-4295-4e3f-83b7-4f50e848a084",
+                            "label": "Description",
+                            "name": "description",
+                            "options": {},
+                            "orderIdx": 2
+                        },
+                        "isConnected": {
+                            "dataType": "bool",
+                            "display": true,
+                            "inputType": "boolean",
+                            "isReadOnly": true,
+                            "key": "470682c5-d68f-4abc-8e7e-6c88af37de23",
+                            "label": "Connected?",
+                            "name": "isConnected",
+                            "options": {},
+                            "orderIdx": 4
+                        },
+                        "isUpToDate": {
+                            "dataType": "bool",
+                            "display": true,
+                            "inputType": "boolean",
+                            "isReadOnly": true,
+                            "key": "a0f96725-0664-4864-b9f6-50d3f1e701ad",
+                            "label": "Up To Date?",
+                            "name": "isUpToDate",
+                            "options": {},
+                            "orderIdx": 5
+                        },
+                        "last_seen_version": {
+                            "dataType": "string",
+                            "display": true,
+                            "isReadOnly": true,
+                            "key": "01d36200-e698-43c2-8032-b697bc8a9321",
+                            "label": "Edge Version",
+                            "name": "last_seen_version",
+                            "options": {},
+                            "orderIdx": 3
+                        },
+                        "name": {
+                            "dataType": "string",
+                            "display": true,
+                            "isReadOnly": true,
+                            "key": "28d6151c-875f-42f8-9aa6-8eaf014d4135",
+                            "label": "Edge Name",
+                            "name": "name",
+                            "options": {},
+                            "orderIdx": 1
+                        }
+                    },
+                    "eventTarget": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "force_data": [
+                            "CALCULATED_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "value": "return;"
+                    },
+                    "fontColor": "#000000",
+                    "isReadOnly": true,
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "5c255195-22c5-4d65-a914-1cd1d6cbe465",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return {\n    \"data\":{\n        \"name\": this.datasource.name,\n        \"description\": this.datasource.description || \"\",\n        \"last_seen_version\": this.datasource.last_seen_version || \"\",\n        \"isConnected\": this.datasource.isConnected || \"\",\n        \"isUpToDate\": this.datasource.isUpToDate || \"\"\n    }\n};"
+                        }
+                    },
+                    "noDataText": "No data",
+                    "sliderColor": "#6E8592",
+                    "submitText": "Update Edge",
+                    "titleColor": "#000000",
+                    "toggleColor": "#6E8592"
+                },
+                "tab": "317eea4e-a7b5-4919-9f38-7f8a04ea2334",
+                "type": "FORM_WIDGET_COMPONENT"
+            },
+            "aef7bee3-6cd9-4be2-948c-1fef8448b46e": {
+                "externalScripts": [],
+                "id": "aef7bee3-6cd9-4be2-948c-1fef8448b46e",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "backgroundColor": "#f5f5f5",
+                    "backgroundHoverColor": "#c2c2c2",
+                    "borderColor": "#cccccc",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "CALCULATED_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "a5a42184-b7d5-42e5-a17a-0256577f6722",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "if (!!datasources.selected_edge.latestData() \u0026\u0026 \n    datasources.selected_edge.latestData().name != \"\") {\n\n    datasources.edge_update_logs_topic.sendData(\"\");\n    datasources.edge_update_response_topic.sendData({});\n\n    datasources.edge_update_request_topic.settings({ ...datasources.edge_update_request_topic.settings(), TOPIC_NAME: \"edge/update/\" + datasources.selected_edge.latestData().name + \"/request\"});\n    datasources.edge_update_response_topic.settings({ ...datasources.edge_update_response_topic.settings(), TOPIC_NAME: \"edge/update/\" + datasources.selected_edge.latestData().name + \"/response\"});\n    datasources.edge_update_logs_topic.settings({ ...datasources.edge_update_logs_topic.settings(), TOPIC_NAME: \"edge/update/\" + datasources.selected_edge.latestData().name + \"/logs\"});\n\n    //Hide the upgrade edge button\n    $('#upgrade_edge_btn').hide();\n\n    CB_PORTAL.Loader.show(\"edge_update_logs\");\n\n    return JSON.stringify({\n        \"version\": datasources.portal_getPlatformVersion.latestData().results\n    });\n}\n\n"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "htmlId": "upgrade_edge_btn",
+                    "label": "Upgrade Edge"
+                },
+                "tab": "317eea4e-a7b5-4919-9f38-7f8a04ea2334",
+                "type": "BUTTON_WIDGET_COMPONENT"
+            },
+            "brand": {
+                "externalScripts": [],
+                "id": "brand",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "value": "ClearBlade"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "c74074f2-4a4a-4003-a596-bca2de92b383": {
+                "externalScripts": [],
+                "id": "c74074f2-4a4a-4003-a596-bca2de92b383",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#000000",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 16,
+                    "htmlId": "edge_update_logs",
+                    "textContent": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "id": "f09a93eb-351d-4294-84f7-df1f3816c864",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "var logsTxt = \"\";\nvar theLogs;\n\ntry {\n    theLogs = JSON.parse(this.datasource.edge_update_logs_topic);\n} catch (e) {\n    theLogs = {\"logs\":[]};\n}\n\nif (theLogs.logs) {\n    for(var i=0; i\u003ctheLogs.logs.length; i++) {\n        logsTxt += theLogs.logs[i];\n    }\n}\n\nif (this.datasource.edge_update_response_topic) {\n    var resp = JSON.parse(this.datasource.edge_update_response_topic);\n\n    if (resp.hasOwnProperty('success')) {\n        if (resp.success) {\n            logsTxt += \"Edge updated successfully to version \" + resp.version;\n\n            //Hide the upgrade edge button\n            $('#upgrade_edge_btn').hide();\n\n            //Refresh the edge_list datasource\n            datasources.edge_list.refresh();\n\n            setTimeout(function(){\n                var theEdge = datasources.edge_list.latestData().find(function(edge){\n                    return edge.name === datasources.selected_edge.latestData().name;\n                });\n\n                //Update the selected Edge datasource\n                datasources.selected_edge.sendData(theEdge); \n            }, 500);\n        } else {\n            logsTxt += \"An error occurred while updating Edge: \" + resp.error;\n        \n            //Show the upgrade edge button\n            $('#upgrade_edge_btn').show();\n        }\n        CB_PORTAL.Loader.hide(\"edge_update_logs\");\n    }\n}\n\nreturn logsTxt;"
+                        }
+                    }
+                },
+                "tab": "317eea4e-a7b5-4919-9f38-7f8a04ea2334",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "dd9c373b-562e-46d6-866b-29394610b054": {
+                "externalScripts": [],
+                "id": "dd9c373b-562e-46d6-866b-29394610b054",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeItemBackgroundColor": "#6e8592",
+                    "activeItemFontColor": "#ffffff",
+                    "activeStatusBulletColor": "green",
+                    "allowFilters": false,
+                    "allowSearch": false,
+                    "bulletColor": "#000000",
+                    "displayAttribute": "name",
+                    "displayBullets": true,
+                    "displayStatusIndicators": true,
+                    "enableListAutoSelect": false,
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "5c255195-22c5-4d65-a914-1cd1d6cbe465",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "var platformVersion = \"\";\n\nif (datasources.portal_getPlatformVersion.lastUpdated \u0026\u0026 datasources.portal_getPlatformVersion.latestData().results) {\n    platformVersion = datasources.portal_getPlatformVersion.latestData().results;\n}\n\nif(!!this.widget.isUpToDate) {\n    $('#upgrade_edge_btn').hide();\n} else {\n    $('#upgrade_edge_btn').show();\n}\n\ndatasources.edge_update_logs_topic.sendData(JSON.stringify({\"logs\": []}));\ndatasources.edge_update_response_topic.sendData(JSON.stringify({}));\n\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "inactiveStatusBulletColor": "darkred",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "3ec723bf-4ccf-4cef-88f0-4b9f302e1184",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "var platformVersion = \"\";\n\nif (datasources.portal_getPlatformVersion.lastUpdated \u0026\u0026 datasources.portal_getPlatformVersion.latestData().results) {\n    platformVersion = datasources.portal_getPlatformVersion.latestData().results;\n}\n\nfor (var i=0; i\u003c this.datasource.length; i++) {\n    if(this.datasource[i].last_seen_version === platformVersion) {\n        this.datasource[i].isUpToDate = true;\n    } else {\n        this.datasource[i].isUpToDate = false;\n    }\n}\n\nif (!datasources.selected_edge.lastUpdated ||\n!datasources.selected_edge.latestData()) {\n    $('#upgrade_edge_btn').hide();\n}\n\nreturn this.datasource;"
+                        }
+                    },
+                    "listTitle": "Provisioned Edges",
+                    "statusAttribute": "isUpToDate",
+                    "titleColor": "#000000",
+                    "trackingColumnName": "name"
+                },
+                "tab": "317eea4e-a7b5-4919-9f38-7f8a04ea2334",
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "ea918972-1b47-4ae2-9424-affd207acc54": {
+                "externalScripts": [],
+                "id": "ea918972-1b47-4ae2-9424-affd207acc54",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#000000",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 24,
+                    "textContent": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "value": "Edge Update Status"
+                    }
+                },
+                "tab": "317eea4e-a7b5-4919-9f38-7f8a04ea2334",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "flyoutTitle": {
+                "externalScripts": [],
+                "id": "flyoutTitle",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 30,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "tab": "",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "title": {
+                "externalScripts": [],
+                "id": "title",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            }
+        }
+    },
+    "description": "",
+    "last_updated": "02 Nov 18 14:54 UTC",
+    "name": "Edge_Updater",
+    "system_key": "80b5e2bd0bd49ebfffb1bbf0f79701",
+    "type": "custom_v2"
+}
