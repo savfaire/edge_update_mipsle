@@ -1,0 +1,14 @@
+{
+    "architecture": "edge-linux-amd64",
+    "deploy_command": "./deploy.sh",
+    "description": "",
+    "logs_command": "journalctl --unit=updateEdgeAdapter.service -n 500 --no-pager",
+    "name": "updateEdgeAdapter",
+    "os": "",
+    "protocol": "",
+    "start_command": "./start.sh",
+    "status_command": "./status.sh",
+    "stop_command": "systemctl stop updateEdgeAdapter.service",
+    "undeploy_command": "./undeploy.sh",
+    "version": 8
+}
