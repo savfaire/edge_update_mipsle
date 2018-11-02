@@ -4,7 +4,6 @@
         "Code Libraries",
         "Code Services",
         "Devices",
-        "Edges",
         "Portals",
         "Roles",
         "Users"
@@ -15,18 +14,20 @@
     "clouds": [],
     "description": "User interface and assets that can be used to easily upgrade the ClearBlade Edge binary on IoT gateways executing ClearBlade Edge on a mipsle linux architecure.",
     "domains": [],
-    "gateways": [],
+    "gateways": ["mipsle"],
     "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
     "keywords": [
         "clearblade",
         "iot",
-        "platform"
+        "platform",
+        "edge",
+        "edge update"
     ],
     "license": "MIT",
     "name": "edge_update_mipsle",
     "private": false,
-    "prog_lang": [],
-    "protocols": [],
+    "prog_lang": ["Go", "javascript"],
+    "protocols": ["http", "REST", "TCP"],
     "things": [],
     "version": "1.0.0"
 }
