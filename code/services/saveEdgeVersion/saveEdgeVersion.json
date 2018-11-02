@@ -1,0 +1,15 @@
+{
+    "auto_restart": false,
+    "concurrency": 0,
+    "current_version": 2,
+    "dependencies": "log,clearblade,http,edge_update_constants",
+    "execution_timeout": 60,
+    "logging_enabled": "true",
+    "name": "saveEdgeVersion",
+    "params": [
+        "{\n  \"edgeId\": \"JimRpi3B1\",\n  \"version\": \"4.1.11\"\n}"
+    ],
+    "permissions": {},
+    "run_user": "",
+    "source": "saveEdgeVersion.js"
+}
